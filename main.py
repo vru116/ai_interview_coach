@@ -27,7 +27,7 @@ def run_interview():
     while True:
         user_input = input("Вы: ")
         
-        if ("стоп" == user_input.lower()) or ("стоп игра" in user_input.lower()):
+        if ("стоп" == user_input.lower()) or ("стоп игра" in user_input.lower()) or (user_input.strip().lower().startswith("стоп")) or ("стоп интервью" in user_input):
             break
 
         thoughts = observer_chain.invoke({
